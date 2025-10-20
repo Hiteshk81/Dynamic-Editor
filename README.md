@@ -18,7 +18,8 @@ Export Options: Export customized designs as React JSX, HTML/CSS, PNG, SVG, or J
 Clean UX: High-contrast, user-friendly editor panel for smooth interaction.
 
 ## Project Structure
-'''dynamic-ui-editor/
+'''
+dynamic-ui-editor/
 ├── src/
 │   ├── components/
 │   │   ├── LandingPage.jsx
@@ -37,7 +38,8 @@ Clean UX: High-contrast, user-friendly editor panel for smooth interaction.
 │   ├── App.jsx
 │   └── main.jsx
 ├── public/
-└── package.json'''
+└── package.json
+'''
 
 # Component API and Configurable Props
 ## 1. LandingPage.jsx
