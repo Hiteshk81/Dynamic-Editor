@@ -1,4 +1,4 @@
-### Dynamic UI Editor — React + TailwindCSS
+# Dynamic UI Editor — React + TailwindCSS
 
 A React-based Dynamic UI Editor that allows users to upload and customize their own UI design (Figma JSON, PNG, SVG, JPEG) in real time.
 It provides a clean and intuitive editor interface to modify typography, button styles, layouts, and more — all with instant live preview and export options.
@@ -39,8 +39,8 @@ dynamic-ui-editor/
 ├── public/
 └── package.json
 
-## Component API and Configurable Props
-# 1. LandingPage.jsx
+# Component API and Configurable Props
+## 1. LandingPage.jsx
 
 Purpose: Allows users to upload design files and navigate to the editor.
 
@@ -54,7 +54,7 @@ Validates file type and forwards parsed data to the editor.
 
 Automatically routes to the editor page after successful upload.
 
-# 2. EditorPage.jsx
+## 2. EditorPage.jsx
 
 Purpose: Combines the editor panel (controls) and live preview into one interactive workspace.
 
@@ -68,7 +68,7 @@ Reads customization state from global store.
 
 Renders the current design and applies all customization changes in real time.
 
-# 3. EditorPanel.jsx
+## 3. EditorPanel.jsx
 
 Purpose: Displays all available customization controls.
 
@@ -96,7 +96,7 @@ Updates the global editor state on every input change.
 
 Provides visual sliders, dropdowns, and color pickers.
 
-# 4. LivePreview.jsx
+## 4. LivePreview.jsx
 
 Purpose: Displays the uploaded design and reflects all customization changes instantly.
 
@@ -114,7 +114,7 @@ Handles both image and vector (Figma JSON) rendering.
 
 Ensures responsive scaling and smooth UI transitions.
 
-# 5. ExportOptions.jsx
+## 5. ExportOptions.jsx
 
 Purpose: Provides export buttons for saving the customized design.
 
@@ -130,7 +130,7 @@ Serializes design + state to JSX/HTML/CSS.
 
 Offers download links for exportable files.
 
-# 6. useEditorStore.js (Global State)
+## 6. useEditorStore.js (Global State)
 
 Purpose: Manages all customization states and provides reactive data binding.
 
@@ -144,7 +144,7 @@ State Example:
   activeLayout: 'layoutA'
 }
 
-## How the Editor Works
+# How the Editor Works
 
 #File Upload:
 
@@ -152,19 +152,19 @@ User uploads a design file (JSON/PNG/SVG/JPEG).
 
 The system parses or displays it in the preview section.
 
-# Live Customization:
+## Live Customization:
 
 All customization controls are bound to a global state.
 
 When a user modifies a control, the preview updates immediately using React’s state reactivity.
 
-# Dynamic Styling:
+## Dynamic Styling:
 
 The editor applies real-time updates through CSS variables or inline styles.
 
 Image or layout adjustments are reflected instantly without reloads.
 
-# Export Process:
+## Export Process:
 
 The user clicks an export option (e.g., JSX, PNG).
 
@@ -172,45 +172,45 @@ The design is converted and downloaded with all applied styles and settings pres
 
 Decisions on Additional Customizations and UX Improvements
 
-# High-Contrast Sidebar:
+## High-Contrast Sidebar:
 The editor panel uses dark background with light text for maximum readability and accessibility.
 
-# Responsive Layout:
+## Responsive Layout:
 Both the editor and preview automatically adjust for different screen sizes (desktop, tablet, mobile).
 
-# Smooth Animations:
+## Smooth Animations:
 Used Framer Motion for subtle transitions between layout switches and real-time style updates.
 
-# Two-Way Binding:
+## Two-Way Binding:
 Customization changes instantly sync between UI controls and the rendered design.
 
-# Extensibility:
+## Extensibility:
 The component structure and global store are modular, allowing new customization categories (e.g., animations, gradients, shadows) to be easily added.
 
-# Error Handling:
+## Error Handling:
 Validation checks for unsupported file types or corrupted uploads with user-friendly messages.
 
-# Light/Dark Mode:
+## Light/Dark Mode:
 Optional theme toggle for better user experience during editing sessions.
 
-## Running the Project
+# Running the Project
 
-# Install dependencies:
+## Install dependencies:
 
 npm install
 
 
-# Run the development server:
+## Run the development server:
 
 npm run dev
 
 
-# Build for production:
+## Build for production:
 
 npm run build
 
 
-# Preview production build:
+## Preview production build:
 
 npm run preview
 
