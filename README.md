@@ -19,7 +19,7 @@ Clean UX: High-contrast, user-friendly editor panel for smooth interaction.
 
 ## Project Structure
 '''
-dynamic-ui-editor/
+(dynamic-ui-editor/
 ├── src/
 │   ├── components/
 │   │   ├── LandingPage.jsx
@@ -38,7 +38,7 @@ dynamic-ui-editor/
 │   ├── App.jsx
 │   └── main.jsx
 ├── public/
-└── package.json
+└── package.json)
 '''
 
 # Component API and Configurable Props
